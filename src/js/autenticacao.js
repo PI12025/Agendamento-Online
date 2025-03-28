@@ -17,6 +17,7 @@ $('#autenticacao').click(function () {
 
 });
 
+/*
 //Eventos:
 //Entrar:
 $(document).ready(function () {
@@ -29,6 +30,6 @@ $(document).ready(function () {
     $("#avancar").click(function () {
         $("#pagina2")[0].click();
     });
-});
+});*/
 
 
