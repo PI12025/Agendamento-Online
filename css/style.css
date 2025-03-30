@@ -33,53 +33,10 @@
 }
 
 .filtro:hover {
-    filter: grayscale(100%);
+    filter: brightness(200%);
 }
 
 .agendamento {
     /*background: rgb(143, 115, 115);*/
     height: 225px;
-}
-
-/*Media queries*/
-@media (min-width: 200px) {
-    .tam1 {
-        width: 110px;
-    }
-
-    .tam2 {
-        width: 110px;
-    }
-
-    .tam3 {
-        width: 110px;
-    }
-}
-
-@media (min-width: 768px) {
-    .tam1 {
-        width: 200px;
-    }
-
-    .tam2 {
-        width: 200px;
-    }
-
-    .tam3 {
-        width: 200px;
-    }
-}
-
-@media (min-width: 992px) {
-    .tam1 {
-        width: 461px;
-    }
-
-    .tam2 {
-        width: 304px;
-    }
-
-    .tam3 {
-        width: 217px;
-    }
 }
