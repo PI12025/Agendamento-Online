@@ -55,18 +55,35 @@
 </header><!--/ Fim cabecalho -->
 
 <section><!-- Início seção1 -->
-    <div class="container"><!-- Início container1 -->
+    <!-- Início container1 -->
+    <div class="container fixed-top pt-3 " style="margin-top: 126px; background: white;">
+        <div class="row border border-dark border-top-0 border-left-0 border-right-0">
+            <!-- Iníco da row-->
+            <div class="col-md-8" style="padding-top: 100px;"><!---->
+                <h1 class="text-capitalize">
+                    <i class="fa-regular fa-pen-to-square pr-3"></i>meus dados
+                </h1>
+            </div><!---->
 
-        <!---->
-        <div class="container fixed-top " style="margin-top: 126px; background: white;">
-            <h1 class="text-left text-capitalize border border-dark border-left-0 border-right-0 border-top-0 pb-2"
-                style="padding-top: 130px;"><i class="fa-regular fa-pen-to-square pr-3"></i>cadastro
-            </h1>
-        </div>
-        <!---->
+            <!-- Início menu-->
+            <div class="col-md-4 mt-2 row align-self-start justify-content-end">
+                <div class="dropdown"><!-- Início dropdown -->
+                    <a class="btn text-dark dropdown-toggle" href="" data-toggle="dropdown">Olá, <span
+                            class="font-weight-bold">Usuário</span></a>
+                    <div class="dropdown-menu">
+                        <a class="btn text-dark dropdown-item" href="pagina3.html"><i
+                                class="fa-regular fa-calendar-days pr-2"></i>Agendamento</a>
+                        <a class="btn text-dark dropdown-item" href="index.html"><i
+                                class="fa-solid fa-right-from-bracket pr-2"></i>Sair</a>
+                    </div>
+                </div><!--/ Fim dropdown -->
+            </div><!--/ Fim menu -->
+        </div><!--/ Fim da row -->
+    </div><!--/ Fim container1 -->
 
+    <div class="container" style="margin-top: 325px;"><!-- Início container2 -->
         <!-- Início formulário -->
-        <div style="margin-top: 350px;"><!---->
+        <div><!---->
             <h4 class="text-capitalize">formulário:</h4>
             <p class="font-italic">*Obrigatório</p>
             <form>
@@ -145,57 +162,34 @@
             </form>
         </div><!---->
         <!--/ Fim formulário-->
-    </div><!--/ Fim container1 -->
+    </div><!--/ Fim container2 -->
 
-    <div class="container"><!-- Início container2 -->
+    <div class="container"><!-- Início container3 -->
         <div class="row justify-content-end"><!-- Início da row -->
             <!-- Início botões -->
-            <button class="btn btn-danger m-4" data-toggle="modal" data-target="#cancelarCadastro">Cancelar</button>
-            <input type="submit" class="btn btn-primary m-4" data-toggle="modal" data-target="#confirmarDados"
+            <a href="pagina3.html" class="btn btn-secondary m-4">Cancelar</a>
+            <input type="submit" class="btn btn-primary m-4" data-toggle="modal" data-target="#alterarDados"
                 value="Confirmar">
             <!--/ Fim botões -->
 
             <!-- Início dos modais -->
-            <!-- Iníco do modal cancelar -->
-            <div class="modal fade" id="cancelarCadastro" tabindex="-1" role="dialog" aria-labelledby="cancelar"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            Você realmente deseja cancelar seu cadastro?
-                        </div>
-                        <div class="modal-footer">
-                            <a href="index.html" class="btn btn-secondary">Sim</a>
-                            <a href="" class="btn btn-secondary">Não</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/ Fim modal cancelar -->
-
             <!-- Início modal confirmar -->
-            <div class="modal fade" id="confirmarDados" tabindex="-1" role="dialog" aria-labelledby="verificarDados"
+            <div class="modal fade" id="alterarDados" tabindex="-1" role="dialog" aria-labelledby="alt_Dados"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="verificarDados">Confirmar dados</h5>
+                            <h5 class="modal-title" id="alt_Dados">Alterar dados</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            Verifique se seus dados estão todos corretos!
+                            Você deseja confirmar a alteração?
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                            <a id="pagina1M2" href="index.html"><button id="salvarP2" type="button"
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                            <a id="pagina1M2" href="pagina3.html"><button id="salvarP2" type="button"
                                     class="btn btn-primary">Salvar
                                     dados</button></a>
                         </div>
@@ -204,7 +198,7 @@
             </div>
             <!-- Fim modal confirmar -->
             <!--/ Fim dos modais -->
-        </div><!--/ Fim container2 -->
+        </div><!--/ Fim container3 -->
 </section><!--/ Fim seção1 -->
 
 <!-- JavaScript (Opcional) -->

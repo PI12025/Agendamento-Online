@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Agendamento Online - Consultas Médicas</title>
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/a003e7e3bf.js" crossorigin="anonymous"></script>
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuery Snippet 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><!-- Início cabecalho -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #011804;">
+            <div class="container">
+                <a href="index.html" class="navbar-brand filtro">
+                    <img src="img\logo.png" class="mr-2">UBS
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\sus.png" class="mr-2">SUS - Sistema Único
+                                de Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\govsp.png" class="mr-2">Secretaria da
+                                Saúde - SP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\munsp.png" class="mr-2">Saúde - São
+                                Paulo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!--/ Fim cabecalho -->
+
+    <section><!-- Início seção1 -->
+        <div class="container pt-3" style="margin-top: 130px;"><!-- Início container1 -->
+            <div class="row border border-dark border-top-0 border-left-0 border-right-0"><!-- Iníco da row-->
+                <div class="col-md-8"><!---->
+                    <h1 class="text-capitalize" style="padding-top: 100px;">
+                        <i class="fa-regular fa-calendar-days pr-3"></i>Agendamento
+                    </h1>
+                </div><!---->
+
+                <!-- Início menu-->
+                <div class="col-md-4 mt-2 row align-self-start justify-content-end">
+                    <div class="dropdown"><!-- Início dropdown -->
+                        <a class="btn text-dark dropdown-toggle" href="" data-toggle="dropdown">Olá, <span
+                                class="font-weight-bold">Usuário</span></a>
+                        <div class="dropdown-menu">
+                            <a class="btn text-dark dropdown-item" href="pagina3.html"><i
+                                    class="fa-regular fa-calendar-days pr-2"></i>Agendamento</a>
+                            <a class="btn text-dark dropdown-item" href="index.html"><i
+                                    class="fa-solid fa-right-from-bracket pr-2"></i>Sair</a>
+                        </div>
+                    </div><!--/ Fim dropdown -->
+                </div><!--/ Fim menu -->
+            </div><!--/ Fim da row -->
+        </div><!--/ Fim container1 -->
+
+        <!-- Início container2 -->
+        <div class="container border border-dark border-top-0 border-left-0 border-right-0">
+            <h2 class="text-sm-center pt-4 pb-4">Informe o horário de sua preferência</h2>
+        </div><!--/ Fim container2 -->
+
+        <div class="container"><!-- Início container3 -->
+            <div class="row justify-content-center"><!-- Início da row -->
+                <div class="col-md-7 mt-4"><!-- Início da tabela -->
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Horário</th>
+                                <th>/</th>
+                                <th>Médico - especialidade</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>08:00 hs</td>
+                                <td> / </td>
+                                <td>Dr. Fulano - Clínico Geral</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10:00 hs</td>
+                                <td> / </td>
+                                <td>Dr. Sicrano - Ortopedista</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11:00 hs</td>
+                                <td> / </td>
+                                <td>Dra. Fulana - Clínico Geral</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14:00 hs</td>
+                                <td> / </td>
+                                <td>Dra. Sicrana - Geriatra</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:00 hs</td>
+                                <td> / </td>
+                                <td>Dr. Fulano - Otorrinolaringologista</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Início da paginação -->
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a href="" class="page-link text-dark">Anterior</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link text-dark">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link text-dark">Próximo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--/ Fim da paginação -->
+                </div><!--/ Fim da tabela -->
+            </div><!--/ Fim da row -->
+        </div><!-- Fim container3 -->
+
+        <div class="container"><!-- Iníco container4 -->
+            <div class="row justify-content-center"><!-- Início da row -->
+                <div class="row col-md-5 justify-content-center">
+                    <a id="" href="pagina4.html"><button class="btn btn-primary mt-4 mb-4">Voltar</button></a>
+                </div>
+
+                <div class="row col-md-5 justify-content-center">
+                    <a id="" href="pagina6.html"><Button class="btn btn-primary mt-4 mb-4">Avançar</Button></a>
+                </div>
+            </div><!-- Fim da row -->
+        </div><!--/ Fim container4 -->
+    </section><!--/ Fim seção1 -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript (Autenticação) -->
+    <script src="src\js\autenticacao.js"></script>
+</body>
+
+</html>

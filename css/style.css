@@ -51,6 +51,12 @@
     height: 225px;
 }
 
+.calendario {
+    background: rgb(226, 226, 226);
+    width: 200px;
+    height: 300px;
+}
+
 /*Barra navegação*/
 .navbar-dark .navbar-nav .nav-link {
     color: #6d9186;

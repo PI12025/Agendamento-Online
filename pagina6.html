@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Agendamento Online - Consultas Médicas</title>
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/a003e7e3bf.js" crossorigin="anonymous"></script>
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuery Snippet 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><!-- Início cabecalho -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #011804;">
+            <div class="container">
+                <a href="index.html" class="navbar-brand filtro">
+                    <img src="img\logo.png" class="mr-2">UBS
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\sus.png" class="mr-2">SUS - Sistema Único
+                                de Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\govsp.png" class="mr-2">Secretaria da
+                                Saúde - SP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\munsp.png" class="mr-2">Saúde - São
+                                Paulo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!--/ Fim cabecalho -->
+
+    <section><!-- Início seção1 -->
+        <div class="container pt-3" style="margin-top: 130px;"><!-- Início container1 -->
+            <div class="row border border-dark border-top-0 border-left-0 border-right-0"><!-- Iníco da row-->
+                <div class="col-md-8"><!---->
+                    <h1 class="text-capitalize" style="padding-top: 100px;"></h1>
+                </div><!---->
+
+                <!-- Início menu-->
+                <div class="col-md-4 mt-2 row align-self-start justify-content-end">
+                    <div class="dropdown"><!-- Início dropdown -->
+                        <a class="btn text-dark dropdown-toggle" href="" data-toggle="dropdown">Olá, <span
+                                class="font-weight-bold">Usuário</span></a>
+                        <div class="dropdown-menu">
+                            <a class="btn text-dark dropdown-item" href="index.html"><i
+                                    class="fa-solid fa-right-from-bracket pr-2"></i>Sair</a>
+                        </div>
+                    </div><!--/ Fim dropdown -->
+                </div><!--/ Fim menu -->
+            </div><!--/ Fim da row -->
+        </div><!--/ Fim container1 -->
+
+        <!-- Início container2 -->
+        <div class="container border border-dark border-top-0 border-left-0 border-right-0">
+            <h2 class="text-sm-left pt-4 pb-4">Confirme seu agendamento</h2>
+        </div><!--/ Fim container2 -->
+
+        <div class="container"><!-- Início container3 -->
+            <div class="row col-md-7 mt-4"><!-- Início da row1 -->
+                <h4>UBS - Vila Feliz</h4>
+            </div><!-- Fim da row1 -->
+
+            <div class="row col-md-7 mt-4"><!-- Início da row2 -->
+
+                <div class="col-md-9">
+                    <h5>Data:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">12/03/2025</li>
+                        <li class="list-group-item">Quarta-Feira</li>
+                        <li class="list-group-item"></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <a class="btn" href="pagina4.html">
+                        <h5 class="text-secondary"><i class="fa-regular fa-pen-to-square pr-3"></i>Editar</h5>
+                    </a>
+                </div>
+            </div><!-- Fim da row2 -->
+
+            <div class="row col-md-7 mt-4"><!-- Início da row3 -->
+                <div class="col-md-9">
+                    <h5>Horário:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">08:00 hs</li>
+                        <li class="list-group-item">Dr. Fulano</li>
+                        <li class="list-group-item">Clínico Geral</li>
+                        <li class="list-group-item"></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <a class="btn" href="pagina5.html">
+                        <h5 class="text-secondary"><i class="fa-regular fa-pen-to-square pr-3"></i>Editar</h5>
+                    </a>
+                </div>
+            </div><!-- Fim da row3 -->
+        </div><!-- Fim container3 -->
+
+        <div class="container"><!-- Iníco container4 -->
+            <div class="row col-md-7 justify-content-end"><!-- Início da row1 -->
+                <Button class="btn btn-danger m-4" data-toggle="modal"
+                    data-target="#desistirAgendamento">Desistir</Button>
+                <button class="btn btn-primary m-4" data-toggle="modal"
+                    data-target="#confirmarAgendamento">Confirmar</button>
+            </div><!-- Fim da row1 -->
+        </div><!--/ Fim container4 -->
+
+        <!-- Início dos Modais -->
+        <!-- Início modal confirmar -->
+        <div class="modal fade" id="confirmarAgendamento" tabindex="-1" role="dialog"
+            aria-labelledby="agendamentoConfirmado" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="agendamentoConfirmado">Consulta agendada:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul style="list-style: none;">
+                            <li class="plain">12/03/2025</li>
+                            <li>Quarta-Feira</li>
+                            <li>08:00 hs</li>
+                        </ul>
+                        <ul style="list-style: none;">
+                            <li>Dr. Fulano</li>
+                            <li>Clínico Geral</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i
+                                class="fa-solid fa-print pr-2"></i>Imprimir</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal"
+                            data-target="#sairAgendamento"><i
+                                class="fa-solid fa-right-from-bracket pr-2"></i>Sair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal confirmar -->
+
+        <!-- Início modal sair -->
+        <div class="modal fade" id="sairAgendamento" tabindex="-1" role="dialog" aria-labelledby="sair"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="sair">Agendamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Deseja voltar para a página inicial do agendamento?
+                    </div>
+                    <div class="modal-footer">
+                        <a href="pagina3.html" class="btn btn-secondary">Sim</a>
+                        <a href="index.html" class="btn btn-secondary">Não</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal sair -->
+
+        <!-- Início modal desistir -->
+        <div class="modal fade" id="desistirAgendamento" tabindex="-1" role="dialog" aria-labelledby="desistir"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Você realmente deseja desistir do agendamento?
+                    </div>
+                    <div class="modal-footer">
+                        <a href="pagina3.html" class="btn btn-secondary">Sim</a>
+                        <a href="" class="btn btn-secondary">Não</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal desistir -->
+        <!--/ Fim dos Modais -->
+    </section><!--/ Fim seção1 -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript (Autenticação) -->
+    <script src="src\js\autenticacao.js"></script>
+</body>
+
+</html>
