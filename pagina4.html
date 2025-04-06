@@ -86,12 +86,39 @@
         </div><!--/ Fim container2 -->
 
         <div class="container"><!-- Início container3 -->
-            <div class="row justify-content-center">
-                <div class="calendario border border-dark col-md-5 m-5">
-                    Calendário
-                </div>
-            </div>
-        </div><!-- Fim container3 -->
+            <div class="row justify-content-center"><!-- Início Alinhamento horizontal -->
+                <div class="border border-secondary rounded top col-md-7 p-5 mt-4">
+                    <!-- Início calendário -->
+                    <header>
+                        <div class="row pt-2 pb-2 rounded" style="background: rgb(197, 193, 193);">
+                            <div class="col-md-7">
+                                <h4 class="mes&ano" id="mes&ano"></h4>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="icone" id="icone">
+                                    <span id="antes"><i class="fa-solid fa-chevron-left mr-2"></i></span>
+                                    <span id="depois"><i class="fa-solid fa-chevron-right ml-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <ul class="diasDaSemana row justify-content-center pt-4" style="list-style: none;">
+                        <li>Dom</li>
+                        <li>Seg</li>
+                        <li>Ter</li>
+                        <li>Qua</li>
+                        <li>Qui</li>
+                        <li>Sex</li>
+                        <li>Sáb</li>
+                    </ul>
+
+                    <ul class="dias row justify-content-center" id="dias" style="list-style: none;"></ul>
+                </div><!--/ Fim calendário -->
+
+            </div><!-- Início Alinhamento horizontal -->
+        </div><!--/ Fim container3 -->
 
         <div class="container"><!-- Iníco container4 -->
             <div class="row justify-content-center"><!-- Início da row -->
@@ -119,7 +146,7 @@
         crossorigin="anonymous"></script>
 
     <!-- JavaScript (Autenticação) -->
-    <script src="src\js\autenticacao.js"></script>
+    <script src="src\js\pagina4-js.js"></script>
 </body>
 
 </html>

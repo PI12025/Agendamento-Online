@@ -17,19 +17,5 @@ $('#autenticacao').click(function () {
 
 });
 
-/*
-//Eventos:
-//Entrar:
-$(document).ready(function () {
-    $("#entrar").click(function () {
-        $("#pagina3")[0].click();
-    });
-});
-//Avançar:
-$(document).ready(function () {
-    $("#avancar").click(function () {
-        $("#pagina2")[0].click();
-    });
-});*/
 
 

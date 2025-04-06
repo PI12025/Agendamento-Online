@@ -74,6 +74,37 @@
     color: white;
 }
 
+/*Calendário*/
+.diasDaSemana li {
+    width: calc(100% / 7);
+}
+
+.dias li {
+
+    width: calc(100% / 7);
+}
+
+header .icone span:hover {
+    background: rgb(55, 127, 196);
+    cursor: pointer;
+}
+
+.dias li.desativo {
+    color: rgb(190, 188, 188);
+}
+
+.dias li.ativo {
+    color: rgb(64, 137, 206);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.dias li.cad:hover {
+    background: rgb(88, 88, 88);
+    cursor: pointer;
+    color: white;
+}
+
 /*Rodapé*/
 footer {
     background: #1d1c22;
